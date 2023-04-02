@@ -13,6 +13,7 @@
 	</head>
 	
 	<body>
+		<div style="min-height: 80vh;">
 		<?php include 'MenuBar2.php';?>
 
 		<div class='center'>
@@ -45,7 +46,7 @@
 				</div>
 			</div>
 		</div>
-	
-
+		</div>
+		<?php include 'Footer.php';?>
 	</body>
 </html>

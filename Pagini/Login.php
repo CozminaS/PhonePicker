@@ -13,42 +13,46 @@
 	</head>
 	
 	<body>
-		<?php include 'MenuBar2.php';?>
+		<div style="min-height: 80vh;">
+			<?php include 'MenuBar2.php';?>
 
-		<div class='center'>
-			<div class="LoginBox">
-				<div class="left">
-					<img src="CSS/Others/mobile.png" alt="mobile">
-				</div>
+			<div class='center'>
+				<div class="LoginBox">
+					<div class="left">
+						<img src="CSS/Others/mobile.png" alt="mobile">
+					</div>
 
-				<div class="right">
-					<br><div class="text">Login</div><br>
+					<div class="right">
+						<br><div class="text">Login</div><br>
 
-					<form>
-						<label for="email">Email:</label>
-						<input type="text" id="email" name="email" /><br/>
-						<label for="pass">Password:</label>
-						<input name="password" />
+						<form>
+							<label for="email">Email:</label>
+							<input type="text" id="email" name="email" /><br/>
+							<label for="pass">Password:</label>
+							<input name="password" />
 
-						<button>LOGIN</button>
-					</form>    
+							<button>LOGIN</button>
+						</form>    
 
-					<div id = "line">
-						<span> OR </span></div>
+						<div id = "line">
+							<span> OR </span></div>
 
-					<div id = "textToCenter">
-						Sign in with</div>
+						<div id = "textToCenter">
+							Sign in with</div>
 
-					<div style="text-align: center">
-						GOOGLE</div>
+						<div style="text-align: center">
+							GOOGLE</div>
 
-					<div id = "textToCenter" style={margin-top: 1%}>
-						Don't have an account? <a href="Register.php">Register now!</a>
-					</div><br>
+						<div id = "textToCenter" style={margin-top: 1%}>
+							Don't have an account? <a href="Register.php">Register now!</a>
+						</div><br>
+					</div>
 				</div>
 			</div>
-		</div>
-	
 
+		</div>
+
+		<?php include 'Footer.php';?>
+			
 	</body>
 </html>
