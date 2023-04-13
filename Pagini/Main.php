@@ -91,7 +91,7 @@
 					box-shadow: 0 10px 10px -5px #888888;">
 					<div class="first">
 						<video autoplay muted loop class="phones">
-							<source src="CSS/Others/p1.mp4" type="video/mp4">
+							<source src="CSS/Others/p3.mp4" type="video/mp4">
 						</video>
 					</div>
 					

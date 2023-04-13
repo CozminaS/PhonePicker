@@ -5,6 +5,7 @@
 
 		<link rel="stylesheet" href="CSS/body.css">
 		<link rel="stylesheet" href="CSS/LoginBox.css">
+		<script src="verificariFormulare.js"></script>
 		
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Andika&family=Archivo+Narrow&family=Montserrat+Alternates:wght@300&display=swap');
@@ -25,25 +26,20 @@
 					<div class="right">
 						<br><div class="text">Login</div><br>
 
-						<form>
+						<form action="" onsubmit="return false">
 							<label for="email">Email:</label>
 							<input type="text" id="email" name="email" /><br/>
 							<label for="pass">Password:</label>
-							<input name="password" />
+							<input id="password" name="password" />
 
-							<button>LOGIN</button>
+							<button onClick="verificareLogin()" type="submit">LOGIN</button>
+							
+							<!--<div id="rez" style="color: white; text-align: center; font-size: 17px; font-family: 'Andika', sans-serif;"> 
+								Datele sunt incomplete sau incorecte!</div> -->
+							
 						</form>    
 
-						<div id = "line">
-							<span> OR </span></div>
-
-						<div id = "textToCenter">
-							Sign in with</div>
-
-						<div style="text-align: center">
-							GOOGLE</div>
-
-						<div id = "textToCenter" style={margin-top: 1%}>
+						<div id = "textToCenter" style="">
 							Don't have an account? <a href="Register.php">Register now!</a>
 						</div><br>
 					</div>
