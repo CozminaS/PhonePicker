@@ -48,8 +48,6 @@
 			  </div>
 			</div>
 		</div>	
-
-
 			
 				<div class="container" style="box-shadow: inset 0px 10px 10px #888888;">
 					<div class="first">
@@ -60,12 +58,10 @@
 					
 					<div class="second">
 						<div class="paragraph">
-							this is some random text about phones or whatever. 
-							Just a template so I can know how it would look.
-							............................... text text text text text text text
-							text text text text text text text
-							text text text text text text text
-							text text text text text text text
+							 &emsp; Alegerea telefonului perfect se poate dovedi a fi o provocare veritabilă! Dintre atâtea modele care există,
+							parcă îți vine să alegi unul la nimereală doar pentru a nu-ți irosi timpul.
+							Ei bine, ca să alegi totuși ceva de calitate, poți consulta
+							pagina noastră <a href="Informatii.php">informativă</a>.
 						</div>
 					</div>
 				</div>
@@ -73,10 +69,7 @@
 				<div class="container">
 					<div class="first">
 						<div class="paragraph" style="margin-left: 15%;">
-							text text text text text text text
-							text text text text text text text
-							text text text text text text text
-							text text text text text text text
+							când nu ai idee după ce specificații să te uiți,..
 						</div>
 					</div>
 					

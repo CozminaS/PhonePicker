@@ -13,7 +13,7 @@
 
 				<div class="topnav" id="myTopnav">
 				  <a href="Main.php">Acasa</a>
-				  <a href="#">Pagina</a>
+				  <a href="Informatii.php">Pagina</a>
 
 				  <div class="topnav-right">
 					<a href="Login.php">Login</a>
@@ -35,7 +35,7 @@
 
 				<div class="topnav" id="myTopnav">
 				  <a href="Main.php">Acasa</a>
-				  <a href="#">Pagina</a>
+				  <a href="Informatii.php">Pagina</a>
 
 				  <div class="topnav-right">
 					<a href="Account.php"><IMG SRC="CSS/Others/accountOutline.gif" style="width: 30px; padding: none; margin; 1px;"> </img></a>

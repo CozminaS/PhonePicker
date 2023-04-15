@@ -51,21 +51,46 @@ body{
 	overflow: hidden;
 }
 
+@media screen and (max-width: 769px) {
+  .container{
+		width: 100vh;
+		heigth: 100px;
+		background-color: red;
+		text-align: center;
+		position:relative;
+	}
+
+	.first{
+		position:absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+		margin: auto;
+		height: 20px; 
+	}
+
+	.second{
+		position:absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+		margin: auto;
+		height: 20px; 
+	}
+	
+}
+
 /* for video */
 
 #black {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-  z-index: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	z-index: 0;
 }
 
 .content {
-  position: absolute;
-  top: 0;
-  color: #f1f1f1;
-  width: 100%;
+	position: absolute;
+	top: 0;
+	color: #f1f1f1;
+	width: 100%;
 }
 
 /* for fitter animations */
@@ -89,3 +114,91 @@ body{
 	text-align: center;
 }
 
+/* for card information */
+
+.containerCard{
+	width: auto;
+	height: 50vh;
+	background-color: #FCFAFA;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 20px;
+	margin: auto;
+	margin-top: 5%;
+	margin-left: 10%;
+	
+}
+
+.firstCard{
+	float:left; 
+	display:inline; 
+	width: 20%;
+	margin-right: 4%;
+}
+
+.secondCard{
+	float:left; 
+	display:inline; 
+	width: 20%;
+	margin-right: 4%;
+}
+
+.thirdCard{
+	float:left; 
+	display:inline; 
+	width: 20%;
+	margin-right: 4%;
+}
+
+.fourthCard{
+	float:left; 
+	display:inline; 
+	width: 20%;
+}
+
+@media screen and (max-width: 769px) {
+	.containerCard{
+		width: 100vh;
+		height: auto;
+		background-color: #FCFAFA;
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 0 20px;
+		margin: auto;
+		margin-top: 5%;
+		margin-left: 10%;
+	
+	}
+
+	.firstCard{ 
+		display:block; 
+		width: 100%;
+		margin-bottom: 5%;
+		margin-left: 6%;
+	}
+
+	.secondCard{
+		display:block; 
+		width: 90%;
+		margin-bottom: 5%;
+		margin-left: 6%;
+	}
+
+	.thirdCard{
+		display:block; 
+		width: 90%;
+		margin-bottom: 5%;
+		margin-left: 6%;
+	}
+
+	.fourthCard{
+		display:block; 
+		width: 90%;
+		margin-bottom: 5%;
+		margin-left: 6%;
+	}
+}
