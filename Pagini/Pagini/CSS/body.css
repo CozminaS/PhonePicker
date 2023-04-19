@@ -114,3 +114,139 @@ body{
 	text-align: center;
 }
 
+/* for card information */
+
+.containerCard{
+	width: auto;
+	height: 50vh;
+	background-color: #FCFAFA;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 20px;
+	margin: auto;
+	margin-top: 4%;
+	margin-left: 10%;
+	
+}
+
+.firstCard{
+	float:left; 
+	display:inline; 
+	width: 20%;
+	margin-right: 4%;
+}
+
+.secondCard{
+	float:left; 
+	display:inline; 
+	width: 20%;
+	margin-right: 4%;
+}
+
+.thirdCard{
+	float:left; 
+	display:inline; 
+	width: 20%;
+	margin-right: 4%;
+}
+
+.fourthCard{
+	float:left; 
+	display:inline; 
+	width: 20%;
+}
+
+@media screen and (max-width: 1400px) {
+	.containerCard{
+		width: 100vh;
+		height: auto;
+		background-color: #FCFAFA;
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 0 20px;
+		margin: auto;
+		margin-top: 5%;
+		margin-left: 10%;
+	
+	}
+
+	.firstCard{
+		float:left; 
+		display:block; 
+		width: 45%;
+		margin-right: 5%;
+	}
+
+	.secondCard{
+		float:left; 
+		display:inline; 
+		width: 45%;
+		margin: auto;
+	}
+
+	.thirdCard{
+		float:left; 
+		display:block; 
+		width: 45%;
+		margin-right: 5%;
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
+
+	.fourthCard{
+		float:left; 
+		display:inline; 
+		width: 45%;
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.containerCard{
+		width: 100vh;
+		height: auto;
+		background-color: #FCFAFA;
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 0 20px;
+		margin: auto;
+		margin-top: 5%;
+		margin-left: 10%;
+	
+	}
+
+	.firstCard{ 
+		display:block; 
+		width: 9%;
+		margin-bottom: 5%;
+		margin-left: 6%;
+	}
+
+	.secondCard{
+		display:block; 
+		width: 90%;
+		margin-bottom: 5%;
+		margin-left: 6%;
+	}
+
+	.thirdCard{
+		display:block; 
+		width: 90%;
+		margin-bottom: 5%;
+		margin-left: 6%;
+	}
+
+	.fourthCard{
+		display:block; 
+		width: 90%;
+		margin-bottom: 5%;
+		margin-left: 6%;
+	}
+}
