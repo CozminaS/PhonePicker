@@ -80,8 +80,7 @@
 					</div>
 				</div>
 
-				<div class="container" style="padding-bottom: 2%;
-					box-shadow: 0 10px 10px -5px #888888;">
+				<div class="container">
 					<div class="first">
 						<video autoplay muted loop class="phones">
 							<source src="CSS/Others/p3.mp4" type="video/mp4">

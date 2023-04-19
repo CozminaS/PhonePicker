@@ -18,7 +18,8 @@
 	<body>
 		<div style="min-height: 80vh;">
 			<?php include 'MenuBar2.php';?>
-			<div style="font-family: 'Montserrat Alternates', sans-serif; font-weight: bold; font-size: 40px; text-align: center; margin-top: 5%; width: 100%">
+			
+			<div style="font-family: 'Montserrat Alternates', sans-serif; font-weight: bold; font-size: 40px; text-align: center; margin-top: 4%; width: 100%">
 					Ce trebuie să știi la achiziționarea unui telefon </div>
 				
 			<div class="containerCard">
