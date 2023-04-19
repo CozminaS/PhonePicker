@@ -8,8 +8,8 @@
 		
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Andika&family=Archivo+Narrow&family=Montserrat+Alternates:wght@300&display=swap');
-
-	</style>
+		
+		</style>
 		
 		<!--subtitles :: font-family: 'Montserrat Alternates', sans-serif;-->
 		<!--text :: font-family: 'Andika', sans-serif;-->

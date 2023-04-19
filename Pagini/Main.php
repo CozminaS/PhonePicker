@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
 		<link rel="stylesheet" href="CSS/TextAnimation.css">
 		<link rel="stylesheet" href="CSS/body.css">
 		<link rel="stylesheet" href="CSS/Footer.css">

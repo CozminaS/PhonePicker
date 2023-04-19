@@ -13,7 +13,8 @@
 
 				<div class="topnav" id="myTopnav">
 				  <a href="Main.php">Acasa</a>
-				  <a href="Informatii.php">Pagina</a>
+				  <a href="echoBot.php">MiaBot</a>
+				  <a href="telefoane.php">Top20</a>
 
 				  <div class="topnav-right">
 					<a href="Login.php">Login</a>
