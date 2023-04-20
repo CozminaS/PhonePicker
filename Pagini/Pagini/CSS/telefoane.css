@@ -1,9 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Andika&family=Archivo+Narrow&family=Montserrat+Alternates:wght@300&display=swap');
-
-.vl {
-  border-left: 6px solid green;
-  height: 500px;
+img {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	bottom: 0;
 }
 
 .center{
@@ -12,11 +12,10 @@
 	align-items: center;
 }
 
-.infoBox{
-	margin-top: 5%;
+.containerBox{
+	margin-top: 3%;
     margin-left: 7%;
     margin-right: 7%;
-	margin-bottom: 5%;
     max-width: 50%;
 	min-width: 50%;
 
@@ -30,36 +29,41 @@
 
 }
 
-.left{
+.leftCard{
 	float: left;
-	width: 45%;
+	width: 50%;
+	margin: 0;
 	padding: 0;
-	font-family: 'Archivo Narrow', sans-serif;
-	font-size: 20px;
-	text-align: left;
 }
 
-
-.right{
-	width: 45%;
+.rightCard{
+	width: 50%;
 	overflow: hidden;
-	float:right;
-	padding: 0;
-	font-family: 'Archivo Narrow', sans-serif;
-	font-size: 20px;
-	text-align: left;
 }
 
+.productCard{
+	width: 90%;
+	height: 20vh;
+	display: block;
+	margin-top: 3%;
+}
 
-label {
-    text-align: left;
-    font-size: 20px;
-    font-style: italic;
-	font-family: 'Andika', sans-serif;
+.imgCard{
+	width: 50%;
+	display: inline;
+	float: left;
+	margin-right: 3px;
+}
+
+.textCard{
+	width: 45%;
+	font-size: 20px; 
+	padding: 0;
+	overflow: hidden; 
 }
 
 @media screen and (max-width: 770px) {
-    .infoBox {
+    .containerBox{
 		margin-top: 2%;
 		margin-left: 2%;
 		margin-right: 2%;
@@ -73,19 +77,16 @@ label {
 		border-radius: 25px;
 		background-color: white;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-       
-    }
-	
-	.left{
-		display:block; 
-		width: 100%;
-		margin-bottom: 5%;
+
 	}
 
+	.leftCard{
+		display: block;
+		width: 90%;
+	}
 
-	.right{
-		display:block; 
-		width: 100%;
-		margin-bottom: 5%;
+	.rightCard{
+		display: block;
+		width: 90%;
 	}
 }

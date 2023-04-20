@@ -20,9 +20,9 @@
 				<div class="LoginBox">
 					<div class="left">
 						<ul>
-							<li><a class="active" href="Account.php">Cont</a></li>
+							<li><a href="Account.php">Cont</a></li>
 							<li><a href="Settings.php">Setări</a></li>
-							<li><a href="IstoricInteractiuni.php">Istoric interacțiuni</a></li>
+							<li><a class="active" href="IstoricInteractiuni.php">Istoric interacțiuni</a></li>
 							<li><a href="#">Logout</a></li>
 						</ul>
 					</div>
@@ -41,11 +41,10 @@
 							<div class="text">Nume utilizator</div>
 						</div> -->
 						
-						<img src="CSS/Others/avatar1.png" alt="Avatar" style="width: 70%; border-radius: 50%; display: block;
-						margin-left: auto; margin-right: auto;">
+						<div class="text" style="margin-left: auto; margin-right: auto; font-size: 25px; margin-top: 5%">Istoric interacțiuni</div>
 						
-						<div class="text" style="margin-left: auto; margin-right: auto; font-size: 25px;">Nume utilizator</div>
-						<div class="text" style="margin-left: auto; margin-right: auto; font-size: 20px;">email@gmail.com</div>
+						
+						
 
 						
 					</div>

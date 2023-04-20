@@ -8,15 +8,15 @@
 		
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Andika&family=Archivo+Narrow&family=Montserrat+Alternates:wght@300&display=swap');
-
-	</style>
+		
+		</style>
 		
 		<!--subtitles :: font-family: 'Montserrat Alternates', sans-serif;-->
 		<!--text :: font-family: 'Andika', sans-serif;-->
 	</head>
 	
 	<body>
-		<div style="min-height: 80vh; margin: 0;">
+		<div style="min-height: 80vh;">
 			<?php include 'MenuBar2.php';?>
 			
 			<div style="font-family: 'Montserrat Alternates', sans-serif; font-weight: bold; font-size: 40px; text-align: center; margin-top: 4%; width: 100%">
@@ -32,11 +32,11 @@
 							</div>
 							
 							<div class="flip-card-back">
-								<p> <b>Android</b> și <b>iOS</b> sunt sisteme de operare și au câteva diferențe majore:
+								<p> <b>Android</b> și <b>iOS</b> sunt sisteme de operare cu câteva diferențe majore:
 								</p> 
 								<p> 1. Disponibilitate: Android este disponibil pe o gamă mai largă de dispozitive.
 								</p>
-								<p> 2. Interfața: Android are o interfață personalizabilă și flexibilă, iar iOS are o interfață uniformă și elegantă.
+								<p> 2. Interfața: Android are o interfață personalizabilă, iar iOS are o interfață uniformă și elegantă.
 								</p>
 								<p> <a href="info1.php" class="infoText"> Citește mai mult...</a>
 								</p>
@@ -70,10 +70,9 @@
 							</div>
 							
 							<div class="flip-card-back">
-								<p>În funcție de activitățile pe care vrei să le întreprinzi, pentru comunicare, gestionarea programului și navigare GPS,
-								nu ai nevoie de un telefon performant.</p>
-								<p>Totuși, dacă vrei să folosești telefonul pentru divertisment și fotografie, atunci este esențial un dispozitiv mai performant,
-								cu spațiu de stocare și baterie durabilă.
+								<p>Nu ai nevoie de un telefon performant pentru a apeluri telefonice, mesagerie și navigare GPS.</p>
+								<p>Totuși dacă vrei să folosești telefonul pentru divertisment și fotografie, atunci este esențial un dispozitiv 
+								cu spațiu de stocare și baterie durabilă.</p>
 								<p> <a href="info3.php" class="infoText"> Citește mai mult...</a>
 							</div>
 						</div>
@@ -89,9 +88,8 @@
 							
 							<div class="flip-card-back">
 								<p>Spațiul de stocare al telefonului este extrem de important, deoarece acesta determină cât de 
-								multe fișiere și aplicații pot fi stocate și utilizate pe dispozitiv.</p> 
-								<p> Fără suficient spațiu de stocare, vei fi limitat în ceea ce privește fișierele media 
-								salvate, iar dspozitivul ar putea începe să ruleze lent și să se blocheze. </p>
+								multe fișiere și aplicații pot fi stocate pe dispozitiv.</p> 
+								<p> Fără suficient spațiu de stocare, dspozitivul ar putea începe să ruleze lent și să se blocheze. </p>
 								<p> <a href="info4.php" class="infoText"> Citește mai mult...</a>
 							</div>
 						</div>

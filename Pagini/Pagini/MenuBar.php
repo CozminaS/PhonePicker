@@ -12,12 +12,15 @@
 			<body>
 
 				<div class="topnav" id="myTopnav">
-				  <a href="Main.php">Acasa</a>
-				  <a href="Informatii.php">Pagina</a>
+					<a href="Main.php">Acasa</a>
+					<a href="echoBot.php">MiaBot</a>
+					<a href="telefoane.php">Top20</a>
+					<a href="form.php">Form</a>
+					<a href="Grafice.php">Rating-uri</a>
 
-				  <div class="topnav-right">
-					<a href="Login.php">Login</a>
-				  </div>
+					<div class="topnav-right">
+						<a href="Login.php">Login</a>
+					</div>
 				</div>
 				
 
@@ -34,12 +37,17 @@
 			<body>
 
 				<div class="topnav" id="myTopnav">
-				  <a href="Main.php">Acasa</a>
-				  <a href="Informatii.php">Pagina</a>
+					<a href="Main.php">Acasa</a>
+					<a href="echoBot.php">MiaBot</a>
+					<a href="telefoane.php">Top20</a>
+					<a href="form.php">Form</a>
+					<a href="Grafice.php">Rating-uri</a>
 
-				  <div class="topnav-right">
-					<a href="Account.php"><IMG SRC="CSS/Others/accountOutline.gif" style="width: 30px; padding: none; margin; 1px;"> </img></a>
-				  </div>
+					<div class="topnav-right">
+						<a href="Account.php">
+							<IMG SRC="CSS/Others/accountOutline.gif" style="width: 30px; padding: none; margin; 1px;" id="white"> </img>
+						</a>
+					</div>
 				</div>
 				
 

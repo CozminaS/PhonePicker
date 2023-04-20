@@ -28,8 +28,7 @@
 }
 
 .topnav a:hover {
-  background-color: #eef6f6;
-  color: #000000;
+  background-color: #466d6d;
 }
 
 @media screen and (max-width: 600px) {

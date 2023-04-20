@@ -15,7 +15,7 @@
 	
 	<body>
 
-		<div class="container" style="bottom: 0; margin: 0; background-color: #001a1a; 
+		<div class="container" style="bottom: 0; margin: 0; margin-top: 3%; background-color: #001a1a;  display: block;
 			height: 20vh; color: white; box-shadow: inset 0 10px 10px -5px #888888;">
 			
 			<div class="first" style="width: 30%;">

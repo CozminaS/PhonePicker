@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
 		<link rel="stylesheet" href="CSS/TextAnimation.css">
 		<link rel="stylesheet" href="CSS/body.css">
 		<link rel="stylesheet" href="CSS/Footer.css">
@@ -69,7 +70,8 @@
 				<div class="container">
 					<div class="first">
 						<div class="paragraph" style="margin-left: 15%;">
-							când nu ai idee după ce specificații să te uiți,..
+							Vrei să achiziționezi un telefon, dar nu știi ce ți s-ar potrivi? Lasă asta în seama noastră! Tot ce trebuie să faci 
+							este să completezi <a href="form.php">chestionarul</a> nostru și noi îți vom genera câteva opțiuni dintre care să alegi. 
 						</div>
 					</div>
 					
@@ -80,8 +82,7 @@
 					</div>
 				</div>
 
-				<div class="container" style="padding-bottom: 2%;
-					box-shadow: 0 10px 10px -5px #888888;">
+				<div class="container">
 					<div class="first">
 						<video autoplay muted loop class="phones">
 							<source src="CSS/Others/p3.mp4" type="video/mp4">
