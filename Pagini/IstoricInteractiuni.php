@@ -23,7 +23,7 @@
 							<li><a href="Account.php">Cont</a></li>
 							<li><a href="Settings.php">Setări</a></li>
 							<li><a class="active" href="IstoricInteractiuni.php">Istoric interacțiuni</a></li>
-							<li><a href="#">Logout</a></li>
+							<li><a href="Logout.php">Logout</a></li>
 						</ul>
 					</div>
 					
@@ -54,6 +54,7 @@
 		</div>
 
 		<?php include 'Footer.php';?>
+		<?php include 'echoBot.php';?>
 			
 	</body>
 </html>

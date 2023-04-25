@@ -1,4 +1,28 @@
-<!DOCTYPE html>
+<?php  
+	include ('MenuBar2.php');
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+	  
+      $myusername = mysqli_real_escape_string($db,$_POST['email']);
+      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+      
+      $sql = "SELECT id FROM users WHERE email = '$myusername' and password = '$mypassword'";
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+	  
+      $count = mysqli_num_rows($result);
+		
+      if($count == 1) {
+         $_SESSION['login_user'] = $myusername;
+         $_SESSION['loggedin'] = 1;
+      }
+   }
+	
+	if(isset($_SESSION["loggedin"])){
+		header("location: Main.php");
+	}
+?>
+
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +42,6 @@
 	
 	<body>
 		<div style="min-height: 80vh;">
-			<?php include 'MenuBar2.php';?>
 
 			<div class='center'>
 				<div class="LoginBox">
@@ -29,7 +52,7 @@
 					<div class="right">
 						<br><div class="text">Conectare</div><br>
 
-						<form action="" onsubmit="return false">
+						<form action="" method="post">
 							<label for="email">Email:</label>
 							<input type="text" id="email" name="email" /><br/>
 							<label for="pass">Parolă:</label>
@@ -50,6 +73,7 @@
 		</div>
 
 		<?php include 'Footer.php';?>
+		<?php include 'echoBot.php';?>
 		
 			
 		<script>

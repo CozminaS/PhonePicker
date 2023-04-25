@@ -56,6 +56,7 @@
 		</div>
 		
 		<?php include 'Footer.php';?>
+		<?php include 'echoBot.php';?>
 		
 		<script>
 			const togglePassword1 = document.querySelector('#togglePassword1');

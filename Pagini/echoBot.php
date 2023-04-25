@@ -15,8 +15,8 @@
 			  el.parentNode.insertBefore(js, el);
 			  // Initializes the widget when the script is ready
 			  js.onload = function () {
-				  var w = window.ConferbotWidget("643fe1de7792f506110d95c9", "fullpage_chat");
+				  var w = window.ConferbotWidget("643fe1de7792f506110d95c9", "live_chat");
 			  };
 			})(document, "script", "conferbot-js");
-		 </script>'
+		  </script>'
 ?>

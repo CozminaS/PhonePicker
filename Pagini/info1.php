@@ -55,6 +55,7 @@
 		</div>
 
 		<?php include 'Footer.php';?>
+		<?php include 'echoBot.php';?>
 		
 			
 	</body>
