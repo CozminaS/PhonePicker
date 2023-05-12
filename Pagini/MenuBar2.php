@@ -13,7 +13,7 @@
 
 				<div class="topnav" id="myTopnav">
 				  <a href="Main.php">Acasa</a>
-				  <a href="telefoane.php">Top20</a>
+				  <a href="telefoane.php">Top21</a>
 				  <a href="form.php">Form</a>
 				  <a href="Grafice.php">Rating-uri</a>
 
@@ -37,7 +37,7 @@
 
 				<div class="topnav" id="myTopnav">
 				  <a href="Main.php">Acasa</a>
-				  <a href="telefoane.php">Top20</a>
+				  <a href="telefoane.php">Top21</a>
 				  <a href="form.php">Form</a>
 				  <a href="Grafice.php">Rating-uri</a>
 

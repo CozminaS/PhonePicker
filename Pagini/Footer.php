@@ -41,7 +41,7 @@
 						<td> <p> </p> </td>
 					</tr>
 					<tr>
-						<th style="font-size: 22px;
+						<th style="font-size: 22px; color: white; 
 						font-family: 'Montserrat Alternates', sans-serif;"> 
 							General </th>
 						<th style="padding-left: 40%;
