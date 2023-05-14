@@ -1,4 +1,27 @@
-
+<?php  
+	include ('MenuBar2.php');
+   
+	if($_SERVER["REQUEST_METHOD"] == "POST") {
+	  
+		$myusername = mysqli_real_escape_string($db,$_POST['email']);
+		$mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+      
+		$sql = "SELECT ID_USER FROM users WHERE EMAIL = '$myusername' and PASSWORD = '$mypassword'";
+		$result = mysqli_query($db,$sql);
+		$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+	  
+		$count = mysqli_num_rows($result);
+		
+		if($count == 1) {
+			$_SESSION['login_user'] = $myusername;
+			$_SESSION['loggedin'] = $row["ID_USER"];
+		}
+	}
+	
+	if(isset($_SESSION["loggedin"])){
+		header("location: Main.php");
+	}
+?>
 
 <html>
 	<head>
@@ -18,7 +41,6 @@
 	</head>
 	
 	<body>
-		<?php include 'MenuBar2.php';?>
 		
 		<div style="min-height: 80vh;">
 
@@ -32,9 +54,9 @@
 						<br><div class="text">Conectare</div><br>
 
 						<form action="" method="post">
-							<label for="email">Email:</label>
+							<label for="email">&nbsp;Email:</label>
 							<input type="text" id="email" name="email" /><br/>
-							<label for="pass">Parolă:</label>
+							<label for="pass">&nbsp;Parolă:</label>
 							<input type="password" id="password" name="password" />
 							<i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
 

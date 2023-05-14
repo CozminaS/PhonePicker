@@ -1,4 +1,41 @@
-<!DOCTYPE html>
+<?php  
+	include ('MenuBar2.php');
+   
+	if($_SERVER["REQUEST_METHOD"] == "POST") {
+	  
+		$email = mysqli_real_escape_string($db,$_POST['emailR']);
+		$mypassword = mysqli_real_escape_string($db,$_POST['password1']); 
+		$myusername = mysqli_real_escape_string($db,$_POST['user']);
+		
+		$sql0 = "SELECT ID_USER FROM users WHERE email = '$email' and password = '$mypassword'";
+		$result0 = mysqli_query($db,$sql0);
+		$row0 = mysqli_fetch_array($result0,MYSQLI_ASSOC);
+		
+		$count0 = mysqli_num_rows($result0);
+		
+		if($count == 0) {
+      
+			$sql = "INSERT INTO users (USERNAME,PASSWORD,EMAIL) VALUES ('$myusername','$mypassword', '$email');";
+			$result = mysqli_query($db,$sql);
+			
+			$sql2 = "SELECT ID_USER FROM users WHERE email = '$email' and password = '$mypassword'";
+			$result2 = mysqli_query($db,$sql2);
+			$row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC);
+		  
+			$count = mysqli_num_rows($result2);
+			
+			if($count == 1) {
+				$_SESSION['login_user'] = $myusername;
+				$_SESSION['loggedin'] = $row2["ID_USER"];
+			}
+		}
+	}
+	
+	if(isset($_SESSION["loggedin"])){
+		header("location: Main.php");
+	}
+?>
+
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +55,6 @@
 	
 	<body>
 		<div style="min-height: 80vh;">
-			<?php include 'MenuBar2.php';?>
 
 			<div class='center'>
 				<div class="LoginBox">
@@ -29,18 +65,18 @@
 					<div class="right">
 						<br><div class="text">Creare cont</div><br>
 
-						<form action="" onsubmit="return false">
-							<label for="email">Email:</label>
+						<form action="" method="post">
+							<label for="email">&nbsp; Email:</label>
 							<input type="text" id="emailR" name="emailR" /><br/>
 							
-							<label for="user">Nume:</label>
+							<label for="user">&nbsp; Nume:</label>
 							<input type="text" id="user" name="user" /><br/>
 							
-							<label for="pass">Parolă:</label>
+							<label for="pass">&nbsp; Parolă:</label>
 							<input type="password" id="password1" name="password1" />
 							<i class="far fa-eye" id="togglePassword1" style="margin-left: -30px; cursor: pointer;"></i>
 							
-							<label for="pass2">Confirmă parola:</label>
+							<label for="pass2">&nbsp; Confirmă parola:</label>
 							<input type="password" id="password2" name="password2" />
 							<i class="far fa-eye" id="togglePassword2" style="margin-left: -30px; cursor: pointer;"></i>
 

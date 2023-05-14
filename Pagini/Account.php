@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+<?php  
+	include ('MenuBar2.php');
+	
+	$sql = "SELECT * FROM users where ID_USER = ?"; // SQL with parameters
+	$stmt = $db->prepare($sql); 
+	$stmt->bind_param("i", $_SESSION['loggedin']);
+	$stmt->execute();
+	$result = $stmt->get_result(); // get the mysqli result
+	$row = $result->fetch_assoc(); // fetch data 
+
+	
+?>
+
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +26,6 @@
 	
 	<body>
 		<div style="min-height: 80vh;">
-			<?php include 'MenuBar2.php';?>
 
 			<div class='center'>
 				<div class="LoginBox">
@@ -44,8 +55,10 @@
 						<img src="CSS/Others/avatar1.png" alt="Avatar" style="width: 70%; border-radius: 50%; display: block;
 						margin-left: auto; margin-right: auto;">
 						
-						<div class="text" style="margin-left: auto; margin-right: auto; font-size: 25px;">Nume utilizator</div>
-						<div class="text" style="margin-left: auto; margin-right: auto; font-size: 20px;">email@gmail.com</div>
+						<div class="text" style="margin-left: auto; margin-right: auto; font-size: 25px;">
+							<?php echo $row["USERNAME"]; ?> </div>
+						<div class="text" style="margin-left: auto; margin-right: auto; font-size: 20px;">
+							<?php echo $row["EMAIL"]; ?> </div>
 
 						
 					</div>

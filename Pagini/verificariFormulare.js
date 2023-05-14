@@ -77,7 +77,6 @@ function verificareNume(nume) {
 function verificarePass(password) {
 	if(password !== "")
 	{
-			console.log(ok)
 			//document.getElementById("rez").style.color="white";
 			document.getElementById("email").style.borderColor="black";
 			document.getElementById("password").style.borderColor="black";
@@ -129,9 +128,9 @@ function verificareLogin() {
 	
 	if(verificareEmail(email) == true) {
 		if(verificarePass(password) == true) {
-			console.log(ok)
-		}
-	}
+			return true;
+		} else return false;
+	} else return false;
 }
 
 function verificareRegister() {
