@@ -130,7 +130,16 @@
 							</div>
 							
 							<div id="mesaj" class="text" style="font-size: 23px; display: none;">Vă mulțumim pentru completarea formularului!
-							<br><br><div style="font-size: 20px;">Ve-ți primi un răspuns în scurt timp pe adresa de email <?php echo $row["EMAIL"]; ?>.
+							<br><br>
+							<div style="font-size: 20px;">Telefonul care vi s-ar potrivi este
+								<div id="tel1" style="display: none">Samsung Galaxy Note 30 Ultra 5G</div>
+								<div id="tel2" style="display: none">Apple iPhone 15</div>
+								<div id="tel3" style="display: none">Samsung Galaxy M53</div>
+								<div id="tel4" style="display: none">Xiaomi Redmi 11</div>
+								<div id="tel5" style="display: none">Realme C33</div>
+								<div id="tel6" style="display: none">Nokia 105</div>
+								
+							<!--<div style="font-size: 20px;">Ve-ți primi un răspuns în scurt timp pe adresa de email <?php #echo $row["EMAIL"]; ?>.-->
 							<br><br>Dacă nu sunteți mulțumiți de rezultat, puteți completa chestionarul din nou cu alte date.<br></div>
 							<button onClick="completeazaDinNou()" style="width: 70%">Completează din nou</button>
 							</div><br>
@@ -162,6 +171,25 @@
 				document.getElementById('titlu').style.display="none";
 				document.getElementById('page2').style.display="none";
 				document.getElementById('mesaj').style.display="block";
+				
+				var e = document.getElementById("buget");
+				var value = e.value;
+				var text = e.options[e.selectedIndex].text;
+				
+				if(value==1){
+					document.getElementById('tel6').style.display="block";
+				} else if(value==2){
+					document.getElementById('tel5').style.display="block";
+				} else if(value==3){
+					document.getElementById('tel4').style.display="block";
+				} else if(value==4){
+					document.getElementById('tel3').style.display="block";
+				} else if(value==5){
+					document.getElementById('tel2').style.display="block";
+				} else if(value==6){
+					document.getElementById('tel1').style.display="block";
+				}
+					
 			}
 			
 			function completeazaDinNou(){

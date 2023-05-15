@@ -37,16 +37,11 @@
 					Ce spun rating-urile </div>
 		
 			
-				<div class="container">
-					<div class="first" style="width:30%; margin-left: 10%; margin-top: 3%;">
-						<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
-					</div>
-					
-					<div class="second">
-						<div class="paragraph">
-							Text despre statistici idk.
-						</div>
-					</div>
+				<div class="container" style="margin-top:3%; height: 80vh;">
+
+						<iframe title="PhonePicker2" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=ef146ff6-216e-435b-a3c2-75a109896837&autoAuth=true&ctid=90bc7298-1c17-48c6-830b-e88b375f216d" frameborder="0" allowFullScreen="true"></iframe>
+
+
 				</div>
 				
 

@@ -9,7 +9,7 @@
           }
           js = d.createElement(s);
           js.async = true;
-          js.src = "botScript.js";
+          js.src = "https://s3.ap-south-1.amazonaws.com/conferbot.defaults/dist/v1/widget.min.js";
           js.id = id;
           js.charset = "UTF-8";
           el.parentNode.insertBefore(js, el);

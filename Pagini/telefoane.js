@@ -1,5 +1,5 @@
 
-function changeL1() {
+function changeL1(cod_tel, cod_like) {
 	var k = document.getElementById('dislike1').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike1').src = ('CSS/Others/dislike3.svg');
@@ -8,12 +8,18 @@ function changeL1() {
 	var l = document.getElementById('like1').src;
 	if(l == 'http://localhost/Pagini/CSS/Others/like4.svg') {
 		document.getElementById('like1').src = ('CSS/Others/like3.svg');
+		
 	} else {
 		document.getElementById('like1').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel, tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD1() {
+function changeD1(cod_tel,  cod_like) {
 	var k = document.getElementById('like1').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like1').src = ('CSS/Others/like3.svg');
@@ -24,10 +30,15 @@ function changeD1() {
 		document.getElementById('dislike1').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike1').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel, tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL2() {
+function changeL2(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike2').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike2').src = ('CSS/Others/dislike3.svg');
@@ -38,10 +49,15 @@ function changeL2() {
 		document.getElementById('like2').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like2').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD2() {
+function changeD2(cod_tel,  cod_like) {
 	var k = document.getElementById('like2').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like2').src = ('CSS/Others/like3.svg');
@@ -52,10 +68,15 @@ function changeD2() {
 		document.getElementById('dislike2').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike2').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel, tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL3() {
+function changeL3(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike3').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike3').src = ('CSS/Others/dislike3.svg');
@@ -66,10 +87,15 @@ function changeL3() {
 		document.getElementById('like3').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like3').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD3() {
+function changeD3(cod_tel, cod_like) {
 	var k = document.getElementById('like3').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like3').src = ('CSS/Others/like3.svg');
@@ -80,10 +106,15 @@ function changeD3() {
 		document.getElementById('dislike3').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike3').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL4() {
+function changeL4(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike4').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike4').src = ('CSS/Others/dislike3.svg');
@@ -94,10 +125,15 @@ function changeL4() {
 		document.getElementById('like4').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like4').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD4() {
+function changeD4(cod_tel,  cod_like) {
 	var k = document.getElementById('like4').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like4').src = ('CSS/Others/like3.svg');
@@ -108,10 +144,15 @@ function changeD4() {
 		document.getElementById('dislike4').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike4').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL5() {
+function changeL5(cod_tel, cod_like) {
 	var k = document.getElementById('dislike5').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike5').src = ('CSS/Others/dislike3.svg');
@@ -122,10 +163,15 @@ function changeL5() {
 		document.getElementById('like5').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like5').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD5() {
+function changeD5(cod_tel,  cod_like) {
 	var k = document.getElementById('like5').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like5').src = ('CSS/Others/like3.svg');
@@ -136,10 +182,15 @@ function changeD5() {
 		document.getElementById('dislike5').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike5').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel, tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL6() {
+function changeL6(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike6').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike6').src = ('CSS/Others/dislike3.svg');
@@ -150,10 +201,15 @@ function changeL6() {
 		document.getElementById('like6').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like6').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD6() {
+function changeD6(cod_tel,  cod_like) {
 	var k = document.getElementById('like6').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like6').src = ('CSS/Others/like3.svg');
@@ -164,10 +220,15 @@ function changeD6() {
 		document.getElementById('dislike6').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike6').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL7() {
+function changeL7(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike7').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike7').src = ('CSS/Others/dislike3.svg');
@@ -178,10 +239,15 @@ function changeL7() {
 		document.getElementById('like7').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like7').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD7() {
+function changeD7(cod_tel,  cod_like) {
 	var k = document.getElementById('like7').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like7').src = ('CSS/Others/like3.svg');
@@ -192,10 +258,15 @@ function changeD7() {
 		document.getElementById('dislike7').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike7').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL8() {
+function changeL8(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike8').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike8').src = ('CSS/Others/dislike3.svg');
@@ -206,10 +277,15 @@ function changeL8() {
 		document.getElementById('like8').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like8').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD8() {
+function changeD8(cod_tel,  cod_like) {
 	var k = document.getElementById('like8').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like8').src = ('CSS/Others/like3.svg');
@@ -220,10 +296,15 @@ function changeD8() {
 		document.getElementById('dislike8').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike8').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL9() {
+function changeL9(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike9').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike9').src = ('CSS/Others/dislike3.svg');
@@ -234,10 +315,15 @@ function changeL9() {
 		document.getElementById('like9').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like9').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD9() {
+function changeD9(cod_tel,  cod_like) {
 	var k = document.getElementById('like9').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like9').src = ('CSS/Others/like3.svg');
@@ -248,11 +334,16 @@ function changeD9() {
 		document.getElementById('dislike9').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike9').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
 
-function changeL10() {
+function changeL10(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike10').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike10').src = ('CSS/Others/dislike3.svg');
@@ -263,10 +354,15 @@ function changeL10() {
 		document.getElementById('like10').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like10').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel, tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD10() {
+function changeD10(cod_tel,  cod_like) {
 	var k = document.getElementById('like10').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like10').src = ('CSS/Others/like3.svg');
@@ -277,10 +373,15 @@ function changeD10() {
 		document.getElementById('dislike10').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike10').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL11() {
+function changeL11(cod_tel, cod_like) {
 	var k = document.getElementById('dislike11').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike11').src = ('CSS/Others/dislike3.svg');
@@ -291,10 +392,15 @@ function changeL11() {
 		document.getElementById('like11').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like11').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD11() {
+function changeD11(cod_tel,  cod_like) {
 	var k = document.getElementById('like11').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like11').src = ('CSS/Others/like3.svg');
@@ -305,10 +411,15 @@ function changeD11() {
 		document.getElementById('dislike11').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike11').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL12() {
+function changeL12(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike12').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike12').src = ('CSS/Others/dislike3.svg');
@@ -319,10 +430,15 @@ function changeL12() {
 		document.getElementById('like12').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like12').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD12() {
+function changeD12(cod_tel,  cod_like) {
 	var k = document.getElementById('like12').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like12').src = ('CSS/Others/like3.svg');
@@ -333,10 +449,15 @@ function changeD12() {
 		document.getElementById('dislike12').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike12').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL13() {
+function changeL13(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike13').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike13').src = ('CSS/Others/dislike3.svg');
@@ -347,10 +468,15 @@ function changeL13() {
 		document.getElementById('like13').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like13').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD13() {
+function changeD13(cod_tel,  cod_like) {
 	var k = document.getElementById('like13').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like13').src = ('CSS/Others/like3.svg');
@@ -361,10 +487,15 @@ function changeD13() {
 		document.getElementById('dislike13').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike13').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL14() {
+function changeL14(cod_tel, cod_like) {
 	var k = document.getElementById('dislike14').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike14').src = ('CSS/Others/dislike3.svg');
@@ -375,10 +506,15 @@ function changeL14() {
 		document.getElementById('like14').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like14').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel, tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD14() {
+function changeD14(cod_tel, cod_like) {
 	var k = document.getElementById('like14').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like14').src = ('CSS/Others/like3.svg');
@@ -389,10 +525,15 @@ function changeD14() {
 		document.getElementById('dislike14').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike14').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL15() {
+function changeL15(cod_tel, cod_like) {
 	var k = document.getElementById('dislike15').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike15').src = ('CSS/Others/dislike3.svg');
@@ -403,10 +544,15 @@ function changeL15() {
 		document.getElementById('like15').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like15').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD15() {
+function changeD15(cod_tel,  cod_like) {
 	var k = document.getElementById('like15').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like15').src = ('CSS/Others/like3.svg');
@@ -417,10 +563,15 @@ function changeD15() {
 		document.getElementById('dislike15').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike15').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel, tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL16() {
+function changeL16(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike16').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike16').src = ('CSS/Others/dislike3.svg');
@@ -431,10 +582,15 @@ function changeL16() {
 		document.getElementById('like16').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like16').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD16() {
+function changeD16(cod_tel,  cod_like) {
 	var k = document.getElementById('like16').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like16').src = ('CSS/Others/like3.svg');
@@ -445,10 +601,15 @@ function changeD16() {
 		document.getElementById('dislike16').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike16').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL17() {
+function changeL17(cod_tel, cod_like) {
 	var k = document.getElementById('dislike17').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike17').src = ('CSS/Others/dislike3.svg');
@@ -459,10 +620,15 @@ function changeL17() {
 		document.getElementById('like17').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like17').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD17() {
+function changeD17(cod_tel,  cod_like) {
 	var k = document.getElementById('like17').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like17').src = ('CSS/Others/like3.svg');
@@ -473,10 +639,15 @@ function changeD17() {
 		document.getElementById('dislike17').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike17').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL18() {
+function changeL18(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike18').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike18').src = ('CSS/Others/dislike3.svg');
@@ -487,10 +658,15 @@ function changeL18() {
 		document.getElementById('like18').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like18').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD18() {
+function changeD18(cod_tel,  cod_like) {
 	var k = document.getElementById('like18').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like18').src = ('CSS/Others/like3.svg');
@@ -501,10 +677,15 @@ function changeD18() {
 		document.getElementById('dislike18').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike18').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL19() {
+function changeL19(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike19').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike19').src = ('CSS/Others/dislike3.svg');
@@ -515,10 +696,15 @@ function changeL19() {
 		document.getElementById('like19').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like19').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD19() {
+function changeD19(cod_tel,  cod_like) {
 	var k = document.getElementById('like19').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like19').src = ('CSS/Others/like3.svg');
@@ -529,10 +715,15 @@ function changeD19() {
 		document.getElementById('dislike19').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike19').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL20() {
+function changeL20(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike20').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike20').src = ('CSS/Others/dislike3.svg');
@@ -543,10 +734,15 @@ function changeL20() {
 		document.getElementById('like20').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like20').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD20() {
+function changeD20(cod_tel, cod_like) {
 	var k = document.getElementById('like20').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like20').src = ('CSS/Others/like3.svg');
@@ -557,10 +753,15 @@ function changeD20() {
 		document.getElementById('dislike20').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike20').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel,  tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeL21() {
+function changeL21(cod_tel,  cod_like) {
 	var k = document.getElementById('dislike21').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/dislike4.svg'){
 		document.getElementById('dislike21').src = ('CSS/Others/dislike3.svg');
@@ -571,10 +772,15 @@ function changeL21() {
 		document.getElementById('like21').src = ('CSS/Others/like3.svg');
 	} else {
 		document.getElementById('like21').src = ('CSS/Others/like4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel, tip : cod_like},// passing the values
+			});
 	}
 }
 
-function changeD21() {
+function changeD21(cod_tel, cod_like) {
 	var k = document.getElementById('like21').src;
 	if(k == 'http://localhost/Pagini/CSS/Others/like4.svg'){
 		document.getElementById('like21').src = ('CSS/Others/like3.svg');
@@ -585,5 +791,10 @@ function changeD21() {
 		document.getElementById('dislike21').src = ('CSS/Others/dislike3.svg');
 	} else {
 		document.getElementById('dislike21').src = ('CSS/Others/dislike4.svg');
+		$.ajax({
+				type : "GET",  //type of method
+				url  : "AddLike.php",  //your page
+				data : { ID_MOBILE : cod_tel, tip : cod_like},// passing the values
+			});
 	}
 }

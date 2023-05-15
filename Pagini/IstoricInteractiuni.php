@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,6 @@
 	<body>
 		<div style="min-height: 80vh;">
 			<?php include 'MenuBar2.php';?>
-
 			<div class='center'>
 				<div class="LoginBox">
 					<div class="left">
@@ -43,6 +43,9 @@
 						
 						<div class="text" style="margin-left: auto; margin-right: auto; font-size: 25px; margin-top: 5%">Istoric interacțiuni</div>
 						
+						<div>
+  
+						</div>
 						
 						
 

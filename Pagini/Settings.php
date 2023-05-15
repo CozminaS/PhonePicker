@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+<?php  
+	include ('MenuBar2.php');
+	
+	$sql = "SELECT * FROM users where ID_USER = ?"; // SQL with parameters
+	$stmt = $db->prepare($sql); 
+	$stmt->bind_param("i", $_SESSION['loggedin']);
+	$stmt->execute();
+	$result = $stmt->get_result(); // get the mysqli result
+	$row = $result->fetch_assoc(); // fetch data 
+
+	
+?>
+
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +27,6 @@
 	
 	<body>
 		<div style="min-height: 80vh;">
-			<?php include 'MenuBar2.php';?>
 
 			<div class='center'>
 				<div class="LoginBox">
@@ -69,10 +80,10 @@
 						</div>
 						<br>
 
-						<input type="text" id="username" name="username" style="width: 70%; margin-left: 15%;"/>
+						<input type="text" id="username" placeholder="<?php echo $row["USERNAME"]; ?>" name="username" style="width: 70%; margin-left: 15%;"/>
 						<IMG SRC="CSS/Others/pen.png" style="width: 25px; padding: none; margin; 0px;">
 						<br/>
-						<input type="text" id="email" name="email" style="width: 70%; margin-left: 15%;"/>
+						<input type="text" id="email" placeholder="<?php echo $row["EMAIL"]; ?>" name="email" style="width: 70%; margin-left: 15%;"/>
 						<IMG SRC="CSS/Others/pen.png" style="width: 25px; padding: none; margin; 0px;">
 						<br/>
 						
@@ -89,8 +100,6 @@
 		<?php include 'echoBot.php';?>
 		
 		<script>
-			document.getElementById("username").placeholder="Nume utilizator";
-			document.getElementById("email").placeholder="email@gmail.com";
 		
 			let slideIndex = 1;
 			showSlides(slideIndex);
