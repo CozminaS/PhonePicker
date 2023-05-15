@@ -80,7 +80,7 @@
 							<input type="password" id="password2" name="password2" />
 							<i class="far fa-eye" id="togglePassword2" style="margin-left: -30px; cursor: pointer;"></i>
 
-							<button onClick="verificareRegister()">Crează cont</button>
+							<button onClick="verificareRegister()" style="width: 98%; float:right;">Crează cont</button>
 						</form>    
 
 						<div id = "textToCenter">

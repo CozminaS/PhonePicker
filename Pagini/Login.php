@@ -60,7 +60,7 @@
 							<input type="password" id="password" name="password" />
 							<i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
 
-							<button onClick="verificareLogin()" type="submit">Conectare</button>
+							<button onClick="verificareLogin()" type="submit" style="width: 98%; float:right;">Conectare</button>
 							
 						</form>    
 
